@@ -49,75 +49,84 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pVW-on-uWQ">
-                                        <rect key="frame" x="56" y="0.0" width="42.666666666666657" height="118"/>
+                                        <rect key="frame" x="56" y="0.0" width="43" height="118"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ma-S4-bf8">
-                                                <rect key="frame" x="0.0" y="0.0" width="42.666666666666664" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="34"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVj-JV-3s9">
-                                                <rect key="frame" x="0.0" y="42" width="42.666666666666664" height="34"/>
+                                                <rect key="frame" x="0.0" y="42" width="43" height="34"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgd-AW-Bu5">
-                                                <rect key="frame" x="0.0" y="84" width="42.666666666666664" height="34"/>
+                                                <rect key="frame" x="0.0" y="84" width="43" height="34"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="42.5" id="XYa-C6-jw3"/>
+                                            <constraint firstAttribute="width" constant="43" id="XYa-C6-jw3"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5lm-LI-QOz">
-                                        <rect key="frame" x="98.666666666666671" y="0.0" width="201.33333333333331" height="118"/>
+                                        <rect key="frame" x="99" y="0.0" width="200" height="118"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9vk-bR-wti">
-                                                <rect key="frame" x="-2" y="0.0" width="205.33333333333334" height="35"/>
+                                                <rect key="frame" x="-2" y="0.0" width="204" height="35"/>
                                                 <connections>
-                                                    <action selector="redSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="WbE-Br-apB"/>
+                                                    <action selector="rgbSlide" destination="BYZ-38-t0r" eventType="valueChanged" id="pLK-23-JvP"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Pp-33-flQ">
-                                                <rect key="frame" x="-2" y="42" width="205.33333333333334" height="35"/>
+                                                <rect key="frame" x="-2" y="42" width="204" height="35"/>
                                                 <connections>
-                                                    <action selector="greenSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="iU3-Ou-zv2"/>
+                                                    <action selector="rgbSlide" destination="BYZ-38-t0r" eventType="valueChanged" id="hkO-3F-8hL"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dxP-Dn-rOS">
-                                                <rect key="frame" x="-2" y="84" width="205.33333333333334" height="35"/>
+                                                <rect key="frame" x="-2" y="84" width="204" height="35"/>
                                                 <connections>
-                                                    <action selector="blueSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="fRi-l4-qIS"/>
+                                                    <action selector="rgbSlide" destination="BYZ-38-t0r" eventType="valueChanged" id="Owk-BQ-jcH"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TCb-eh-XJc">
-                                        <rect key="frame" x="300" y="0.0" width="43" height="118"/>
+                                        <rect key="frame" x="299" y="0.0" width="44" height="118"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sX-OL-U0q">
-                                                <rect key="frame" x="0.0" y="0.0" width="43" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <action selector="editTF" destination="BYZ-38-t0r" eventType="editingDidEnd" id="dys-sb-Zfx"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z3B-5r-194">
-                                                <rect key="frame" x="0.0" y="42" width="43" height="34"/>
+                                                <rect key="frame" x="0.0" y="42" width="44" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <action selector="editTF" destination="BYZ-38-t0r" eventType="editingDidEnd" id="x7x-KZ-169"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EZr-Ep-6Iz">
-                                                <rect key="frame" x="0.0" y="84" width="43" height="34"/>
+                                                <rect key="frame" x="0.0" y="84" width="44" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <action selector="editTF" destination="BYZ-38-t0r" eventType="editingDidEnd" id="OOK-rA-LDo"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="43" id="JWQ-O6-gz2"/>
+                                            <constraint firstAttribute="width" constant="44" id="JWQ-O6-gz2"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -136,16 +145,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="blueLabel" destination="lgd-AW-Bu5" id="QXf-Tk-Cvv"/>
-                        <outlet property="blueSliderOutlet" destination="dxP-Dn-rOS" id="wX2-mi-uQb"/>
-                        <outlet property="blueTF" destination="EZr-Ep-6Iz" id="QPb-6N-AbF"/>
-                        <outlet property="greenLabel" destination="aVj-JV-3s9" id="vNG-Ld-ucB"/>
-                        <outlet property="greenSliderOutlet" destination="6Pp-33-flQ" id="M1Z-lm-wgw"/>
-                        <outlet property="greenTF" destination="z3B-5r-194" id="F6e-F2-07a"/>
-                        <outlet property="redLabel" destination="3ma-S4-bf8" id="hvL-TB-huN"/>
-                        <outlet property="redSliderOutlet" destination="9vk-bR-wti" id="4st-k5-Vcq"/>
-                        <outlet property="redTF" destination="4sX-OL-U0q" id="eWM-Cf-f5L"/>
                         <outlet property="rgbView" destination="BTB-Vq-aTE" id="TIV-3u-g0C"/>
+                        <outletCollection property="rgbLabels" destination="3ma-S4-bf8" collectionClass="NSMutableArray" id="VNr-2e-x14"/>
+                        <outletCollection property="rgbLabels" destination="aVj-JV-3s9" collectionClass="NSMutableArray" id="tmv-y5-9UQ"/>
+                        <outletCollection property="rgbLabels" destination="lgd-AW-Bu5" collectionClass="NSMutableArray" id="SQX-Xz-T82"/>
+                        <outletCollection property="rgbTFs" destination="4sX-OL-U0q" collectionClass="NSMutableArray" id="vST-Eo-XUn"/>
+                        <outletCollection property="rgbTFs" destination="z3B-5r-194" collectionClass="NSMutableArray" id="Xqh-s9-vgD"/>
+                        <outletCollection property="rgbTFs" destination="EZr-Ep-6Iz" collectionClass="NSMutableArray" id="Snm-UZ-SMk"/>
+                        <outletCollection property="rgbSliders" destination="9vk-bR-wti" collectionClass="NSMutableArray" id="4Ow-34-xjY"/>
+                        <outletCollection property="rgbSliders" destination="6Pp-33-flQ" collectionClass="NSMutableArray" id="nUZ-EH-z9v"/>
+                        <outletCollection property="rgbSliders" destination="dxP-Dn-rOS" collectionClass="NSMutableArray" id="DtS-kJ-cTw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
